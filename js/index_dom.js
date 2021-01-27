@@ -1,6 +1,6 @@
 import hamburgerMenu from "./dom/1_menu_hamburguesa.js";
 import{alarm, digitalClock} from "./dom/reloj.js";
-import {shorcut} from "./dom/teclado.js"
+import {moveBall,shorcut} from "./dom/teclado.js"
 const d=document;
 
 d.addEventListener("DOMContentLoaded",(e)=>{
@@ -11,4 +11,5 @@ d.addEventListener("DOMContentLoaded",(e)=>{
 
 d.addEventListener("keydown",e=>{
     shorcut(e);
+    moveBall(e,".ball",".stage")
 })
