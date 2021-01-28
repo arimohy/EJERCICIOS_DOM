@@ -12,7 +12,7 @@ export default function countdown(id,limitDate,finalMessage){
         minutes=("0"+Math.floor((limitTime % (1000*60*60))/(1000*60))).slice(-2),
         second=("0"+Math.floor((limitTime % (1000*60))/(1000))).slice(-2);
         $countdown.innerHTML=`<h3> Faltan ${days} dias ${hours} horas ${minutes} minutes ${second} segundos </h3>`;
-        console.log(countdownDate,now,limitTime);
+        //console.log(countdownDate,now,limitTime);
         //console.log(document.getElementById(id),$countdown)
         if(limitTime<0){
             clearTimeout(countdownTempo);
