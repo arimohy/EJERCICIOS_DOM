@@ -4,7 +4,7 @@ export default function scrollTopButton(btn){
 const $scrollBtn=d.querySelector(btn);
 
 w.addEventListener("scroll",e=>{
-    console.log(w.pageXOffset,d.documentElement.scrollTop);
+    //console.log(w.pageXOffset,d.documentElement.scrollTop);
     let scrollTop=w.pageXOffset || d.documentElement.scrollTop;
 
     if(scrollTop>600){

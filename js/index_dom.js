@@ -3,6 +3,7 @@ import scrollTopButton from "./dom/boton_scroll.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import{alarm, digitalClock} from "./dom/reloj.js";
 import {moveBall,shorcut} from "./dom/teclado.js"
+import darkTheme from "./dom/tema_oscuro.js";
 const d=document;
 
 d.addEventListener("DOMContentLoaded",(e)=>{
@@ -12,10 +13,13 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     countdown("countdown",
     "March 14, 2021 00:00:00",
     "Feliz Cumpleaños Yhomira");
-    scrollTopButton(".scroll-top-btn")
+    scrollTopButton(".scroll-top-btn");
+    
 });
 
 d.addEventListener("keydown",e=>{
     shorcut(e);
     moveBall(e,".ball",".stage")
 })
+
+darkTheme(".dark-theme-btn","dark-mode")
