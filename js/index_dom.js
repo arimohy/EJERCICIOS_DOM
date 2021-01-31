@@ -2,6 +2,7 @@ import hamburgerMenu from "./dom/1_menu_hamburguesa.js";
 import scrollTopButton from "./dom/boton_scroll.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import userDeviceInfo from "./dom/deteccion_dispositivos.js";
+import networkStatus from "./dom/deteccion_red.js";
 import responsiveMedia from "./dom/objeto_responsive.js";
 import responsiveTester from "./dom/prueba_responsive.js";
 import{alarm, digitalClock} from "./dom/reloj.js";
@@ -39,5 +40,7 @@ d.addEventListener("keydown",e=>{
     shorcut(e);
     moveBall(e,".ball",".stage")
 })
-
+/******/
 darkTheme(".dark-theme-btn","dark-mode")
+
+networkStatus();
