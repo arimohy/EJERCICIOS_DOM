@@ -6,7 +6,7 @@ export default function scrollSpy(){
         entries.forEach(entry=>{
             //console.log(Entry)
             const id=entry.target.getAttribute("id")
-            console.log(id);
+            //console.log(id);
             if(entry.isIntersecting){
                 d.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.add("active")
             }else{

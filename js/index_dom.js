@@ -14,12 +14,13 @@ import searchFilters from "./dom/filtro_busquedas.js"
 import draw from "./dom/sorteo.js";
 import slider from "./dom/carrusel.js";
 import scrollSpy from "./dom/scroll_espia.js";
+import smartVideo from "./dom/video_inteligente.js";
 const d=document;
 
 d.addEventListener("DOMContentLoaded",(e)=>{
     hamburgerMenu(".panel-btn",".panel","menu a");
     digitalClock("#reloj","#activar-reloj","#desactivar-reloj");
-    alarm("assets/alarma_2.mp3","#activar-alarma","#desactivar-alarma");
+    alarm("asset/alarma.mp3","#activar-alarma","#desactivar-alarma");
     countdown("countdown",
     "March 14, 2021 00:00:00",
     "Feliz Cumpleaños Yhomira");
@@ -45,6 +46,7 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     draw("#winner-btn",".player");
     slider();
     scrollSpy();
+    smartVideo();
     
 });
 
