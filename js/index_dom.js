@@ -10,6 +10,7 @@ import responsiveTester from "./dom/prueba_responsive.js";
 import{alarm, digitalClock} from "./dom/reloj.js";
 import {moveBall,shorcut} from "./dom/teclado.js"
 import darkTheme from "./dom/tema_oscuro.js";
+import searchFilters from "./dom/filtro_busquedas.js"
 const d=document;
 
 d.addEventListener("DOMContentLoaded",(e)=>{
@@ -36,7 +37,8 @@ d.addEventListener("DOMContentLoaded",(e)=>{
 
     userDeviceInfo("user-device");
     webCam("webcam");
-    getGeolocation("geolocation")
+    getGeolocation("geolocation");
+    searchFilters(".card-filter",".card")
     
 });
 
