@@ -35,7 +35,7 @@
             <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
             <a href="#seccion13" data-scroll-spy>video inteligente</a>
             <a href="#seccion14" data-scroll-spy>validaciones Formulario</a>
-            <a href="#seccion15" data-scroll-spy>filtros de busqueda</a>
+            <a href="#seccion15" data-scroll-spy>Narrador</a>
 
         </nav>
     </aside>
@@ -198,7 +198,7 @@
         </section>
         <section id="seccion14" class="section" data-scroll-spy>
             <h2>Validaciones Formulario</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/arimohy@gmail.com" method="POST" target="_blank">
                 <legend>Envianos tus comentario</legend>
                 <input type="text" name="name" placeholder="Escribe tu nombre"
                 title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
@@ -209,7 +209,7 @@
                 title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
                 <input type="submit" value="Enviar">
                 <div class="contact-form-loader none">
-                <img src="asset/loader.svg" alt="Cargando">
+                <img src="asset/loader2.svg" alt="Cargando">
                 </div>
                 <div class="contact-form-response none">
                     <p>los datos han sido enviados</p>
@@ -217,7 +217,14 @@
             </form>
         </section>
         <section id="seccion15" class="section" data-scroll-spy>
-            <h2>Filtro de Busqueda</h2>
+            <h2>Narrador</h2>
+            <select id="speech-select">
+                <option value="">Hola elige una voz :) </option>
+            </select>
+            <br><br>
+            <textarea  id="speech-text" cols="50" rows="5" placeholder="Ingresa un texto para leerlo..."></textarea>
+            <br><br>
+            <button id="speech-btn">Leer Texto</button>
         </section>
         
     </main>
